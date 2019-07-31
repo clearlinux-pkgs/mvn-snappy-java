@@ -4,13 +4,15 @@
 #
 Name     : mvn-snappy-java
 Version  : 1.1.7.1
-Release  : 2
+Release  : 3
 URL      : https://github.com/xerial/snappy-java/archive/1.1.7.1.tar.gz
 Source0  : https://github.com/xerial/snappy-java/archive/1.1.7.1.tar.gz
 Source1  : https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.jar
 Source2  : https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.pom
-Source3  : https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar
-Source4  : https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.pom
+Source3  : https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar
+Source4  : https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.pom
+Source5  : https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar
+Source6  : https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0 BSD-3-Clause
@@ -33,16 +35,22 @@ data components for the mvn-snappy-java package.
 
 %install
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.0.4.1
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.0.4.1
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.0.4.1
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.0.4.1
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.pom
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.0.5
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.0.5
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.pom
 
 
 %files
@@ -52,5 +60,7 @@ cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/xerial/snappy/snapp
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.jar
 /usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.pom
+/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar
+/usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.pom
 /usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar
 /usr/share/java/.m2/repository/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.pom
