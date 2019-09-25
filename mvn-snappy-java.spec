@@ -4,7 +4,7 @@
 #
 Name     : mvn-snappy-java
 Version  : 1.1.7.1
-Release  : 5
+Release  : 6
 URL      : https://github.com/xerial/snappy-java/archive/1.1.7.1.tar.gz
 Source0  : https://github.com/xerial/snappy-java/archive/1.1.7.1.tar.gz
 Source1  : https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.jar
